@@ -15,4 +15,27 @@ dialog{width:min(680px,calc(100% - 32px));padding:27px;border:1px solid var(--li
 @media(max-width:380px){.header-inner{gap:12px;padding:0 18px}nav{gap:13px}.page-shell{padding-left:20px;padding-right:20px}.wordmark-icon{font-size:26px}.theme-toggle{width:28px;height:28px}h1{font-size:62px}.hero-links{gap:15px}.hero-links .text-link{font-size:11px}.button{padding:10px 13px;font-size:11px}.section-scholar{max-width:70px;line-height:1.4}.publication{grid-template-columns:minmax(0,1fr);gap:10px}.publication-meta{flex-direction:row;align-items:center;gap:10px}.pub-year{font:12px var(--sans)}.online-date{font-size:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 @media print{body{background:white;color:#111;font-size:11pt}.site-header,.research-visual,.theme-toggle,.bib-trigger,.bibliography-download,.site-footer>a,dialog,.skip-link{display:none!important}.page-shell{max-width:none;padding:0}.hero{display:block;padding:0 0 24px}h1{font-size:40pt}.bio,.authors,.venue-full,.pub-summary,.research-card p,.contact-section p{color:#333}.research-grid{display:block}.research-card{border:0;padding:10px 0;break-inside:avoid}.card-top,.topic-label{display:none}.section{padding:22px 0}.publication{break-inside:avoid}.publication-links .publication-topic{display:none}.button-primary{color:#111;background:transparent;border:1px solid #aaa}.site-header{position:static}a[href^="http"]{text-decoration:underline}.contact-section{display:block}.contact-links{margin-top:15px}}
-.profile-photo { display: block; width: 100%; max-width: 290px; aspect-ratio: 1; object-fit: cover; object-position: center; border-radius: 16px; justify-self: center; } @media (max-width: 720px) { .profile-photo { max-width: 200px; } }
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 50% 40%;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  justify-self: center;
+}
+
+@media (max-width: 720px) {
+  .profile-photo {
+    max-width: 200px;
+  }
+}
+
+@media print {
+  .profile-photo {
+    display: none;
+  }
+}
