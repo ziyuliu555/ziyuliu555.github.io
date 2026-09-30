@@ -7,7 +7,7 @@
 1. 登录 GitHub 账号 ziyuliu555，创建公开仓库 ziyuliu555.github.io；若已有同名仓库，先检查原有内容再决定如何合并。
 2. 将本文件夹内的文件及 assets 文件夹上传到仓库根目录。根目录必须直接包含 index.html。
 3. 在 Settings → Pages → Build and deployment 中选择 Deploy from a branch，分支 main，目录 /(root)，点击 Save。
-4. 等待仓库 Actions 中的部署完成，再访问 https://ziyuliu555.github.io/。
+4. 等待仓库 Actions 中的部署完成，再访问 https://ziyuliu555.github.io/
 5. 使用浏览器无痕窗口检查网页、样式和论文链接。
 
 保留 .nojekyll 空文件即可跳过 Jekyll 处理。如果网页上传时看不到这个隐藏文件，可以用 Add file → Create new file 创建同名空文件。
