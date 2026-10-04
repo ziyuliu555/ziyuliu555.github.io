@@ -2,6 +2,18 @@
 
 这是可以直接发布到 GitHub Pages 的独立静态网站。仓库根目录包含 index.html，无需安装 Node 或构建工具。
 
+## 页面内容与排版
+
+主页采用简洁的学术个人主页布局，保留绿色主题，包括个人介绍、研究方向、论文、教育背景、教学与服务经历，以及联系方式。简介下方包含 Email、Google Scholar、GitHub 和 LinkedIn。
+
+桌面端姓名为 42px，正文为 17px，论文作者和摘要为 16px。手机端使用单栏布局，保持正文的可读性。字号、颜色和间距统一在 styles.css 中调整。
+
+## 访客地球
+
+index.html 底部的 visitor-section 已接入本人提供的 MapMyVisitors 地球脚本，widget ID 为 MEvA4UkBjBCqyBmDeYVbJF3aSHSqpjAmPopKyZlc3O8。
+
+该组件通过 HTTPS 从 MapMyVisitors 加载，依赖网络和第三方服务。更换组件时，在 MapMyVisitors 账号中生成对应网站的嵌入代码，再替换 id="mmvst_globe" 的 script 标签；不要使用其他网站的 widget ID。访客统计可在 MapMyVisitors 账号中查看。
+
 ## 第一次发布
 
 1. 登录 GitHub 账号 ziyuliu555，创建公开仓库 ziyuliu555.github.io；若已有同名仓库，先检查原有内容再决定如何合并。
