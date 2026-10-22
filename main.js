@@ -1,16 +1,6 @@
 'use strict';
 
 const citations = {
-  fpga: `@article{liu2025cloudfpga,
-  title   = {Watch Out for the Inherent Vulnerabilities in Developing Multi-tenant Cloud-FPGA: Communication Protocols},
-  author  = {Liu, Ziyu and Luo, Yukui and Zhang, Yuheng and Duan, Shijin and Xu, Xiaolin},
-  journal = {ACM Transactions on Design Automation of Electronic Systems},
-  volume  = {30},
-  number  = {1},
-  pages   = {13:1--13:24},
-  year    = {2025},
-  doi     = {10.1145/3702324}
-}`,
   tbnet: `@inproceedings{liu2024tbnet,
   title     = {{TBNet}: A Neural Architectural Defense Framework Facilitating {DNN} Model Protection in Trusted Execution Environments},
   author    = {Liu, Ziyu and Zhou, Tong and Luo, Yukui and Xu, Xiaolin},
@@ -19,6 +9,18 @@ const citations = {
   year      = {2024},
   doi       = {10.1145/3649329.3658251},
   url       = {https://arxiv.org/abs/2405.03974}
+}`,
+  fpga: `@article{liu2024cloudfpga,
+  title   = {Watch Out for the Inherent Vulnerabilities in Developing Multi-tenant Cloud-FPGA: Communication Protocols},
+  author  = {Liu, Ziyu and Luo, Yukui and Zhang, Yuheng and Duan, Shijin and Xu, Xiaolin},
+  journal = {ACM Transactions on Design Automation of Electronic Systems},
+  volume  = {30},
+  number  = {1},
+  pages   = {13:1--13:24},
+  year    = {2024},
+  month   = dec,
+  note    = {Published online December 13, 2024; print issue January 2025},
+  doi     = {10.1145/3702324}
 }`,
   mirrornet: `@inproceedings{liu2023mirrornet,
   title     = {{MirrorNet}: A {TEE}-Friendly Framework for Secure On-device {DNN} Inference},
@@ -89,7 +91,7 @@ if (typeof dialog.showModal === 'function') {
   });
 }
 
-const navLinks = [...document.querySelectorAll('.nav-link')];
+const navLinks = [...document.querySelectorAll('.nav-link[href^="#"]')];
 const sections = navLinks.map(link => document.querySelector(link.hash));
 let scheduled = false;
 function updateNavigation() {

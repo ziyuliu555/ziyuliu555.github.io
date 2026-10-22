@@ -4,9 +4,11 @@
 
 ## 页面内容与排版
 
-主页采用简洁的学术个人主页布局，保留绿色主题，包括个人介绍、研究方向、论文、教育背景、教学与服务经历，以及联系方式。简介下方包含 Email、Google Scholar、GitHub 和 LinkedIn。
+主页参考 al-folio 的简洁学术排版，使用绿色主题，包括个人介绍、2027 暑期研究实习提示、研究方向、论文、教育背景、教学与服务经历，不包含 News。简介下方包含 Resume、Email、Google Scholar、GitHub 和 LinkedIn。此项目保留纯 HTML/CSS/JavaScript 实现，并非 Jekyll/al-folio 模板项目，因此页脚使用 Design inspired by 的说明。
 
-桌面端姓名为 42px，正文为 17px，论文作者和摘要为 16px。手机端使用单栏布局，保持正文的可读性。字号、颜色和间距统一在 styles.css 中调整。
+桌面端姓名为 46px，正文为 16px，照片宽 310px；手机端使用单栏布局和较大的居中照片。照片使用 CSS 裁切显示，保留原始 JPG。字号、颜色和间距统一在 styles.css 中调整。
+
+简历位于 assets/Resume_Ziyu.pdf，导航和个人介绍提供查看入口；替换此文件即可更新简历。论文顺序为 DAC 2024、TODAES 2024、ICCAD 2023。TODAES 使用 2024 年在线发表日期，引用中保留 2025 年印刷卷期的说明。
 
 ## 访客地球
 
@@ -29,7 +31,7 @@ index.html 底部的 visitor-section 已接入本人提供的 MapMyVisitors 地�
 - index.html：个人介绍、研究方向、论文和链接。
 - styles.css：颜色、字体和排版。
 - main.js：引用弹窗、主题切换与论文 BibTeX 内容。
-- publications.bib：可下载的引用文件。修改论文引用时与 main.js 保持一致。
+- publications.bib：保留的引用源文件；页面不再显示整份 bibliography 下载入口。修改论文引用时与 main.js 保持一致。
 - assets/：图标及后续添加的照片、CV 等资源。
 
 少量修改可以直接在 GitHub 网页中打开文件、点击编辑并提交。提交到 main 后，GitHub Pages 会自动更新网站。
